@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-color: antiquewhite;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    height: 50px;
+    background-color: lightslategray;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+.brand img{
+    width : 45px;
+    padding: 8px;
+
+}
+
+.container{
+    height: 68vh;
+    background-color: black;
+    color: black;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bolder;
+    display: flex;
+    margin: 23px auto;
+    width: 80%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url("https://pyxis.nymag.com/v1/imgs/3a3/b1f/2141226b8ab1ae07afe4b541ee0d2b0825-11-yic-pop-essay.rsocial.w1200.jpg");
+    background-size: cover;
+}
+
+.bottom{
+    position: sticky;
+    height: 100px;
+    background-color: lightslategray;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons{
+    margin: 15px;
+}
+.fa-solid{
+    padding: 10px;
+    }
+
+#myProgressBar{
+    width: 99vw;
+    text-align: center;
+    cursor: pointer;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: snow;
+    width: 100%;
+    color: black;
+    margin: 12px 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+}
+
+.songItem img {
+    width: 25px;
+    height: 25px;
+    margin: 0 40px;
+}
+
+.timeSpan{
+    margin: 0 23px;
+}
+
+.songList{
+    display: flexbox;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar {  /* For hidding Scroll bar */
+    display: none;
+}
+
+.timeSpan i{
+    cursor: pointer;
+}
+.songInfo{
+    position: absolute;
+    color: snow;
+    left: 1vw;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img {
+    opacity: 0;
+    transition: opacity 0.40s ease-in;
+}
